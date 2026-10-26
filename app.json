@@ -1,30 +1,48 @@
 {
   "expo": {
-    "name": "MoodMonsters",
-    "slug": "MoodMonsters",
+    "name": "Mood Monsters",
+    "slug": "mood-monsters",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "scheme": "moodmonsters",
+    "userInterfaceStyle": "automatic",
+    "privacy": "unlisted",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.moodmonsters.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Mood Monsters uses the microphone so you can record a voice note when logging an incident.",
+        "NSPhotoLibraryUsageDescription": "Mood Monsters can save exported reports to your photo library.",
+        "NSCameraUsageDescription": "Mood Monsters allows you to add a photo to your child's profile.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "package": "com.moodmonsters.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font",
+      "expo-sqlite",
+      "expo-web-browser",
+      "expo-sharing",
+      "expo-status-bar",
+      "expo-file-system"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a4028f5a-cee4-43ab-b525-f3834dd52f3a"
+      }
+    },
+    "owner": "jstreete"
   }
 }
