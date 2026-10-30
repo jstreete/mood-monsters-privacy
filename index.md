@@ -4,5 +4,5 @@ Mood Monsters helps parents of children with big emotions track incident pattern
 
 ## Links
 
-- [Privacy Policy](privacy-policy.md)
+- [Privacy Policy](privacy-policy)
 - Support: streetewearz@gmail.com
